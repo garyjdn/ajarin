@@ -1,0 +1,111 @@
+#messages{
+    height:150px;
+    max-height: 150px;
+    width:100%;
+    margin-bottom: 8px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.msg{
+    width:100%;
+}
+
+textarea{
+    resize:none;
+}
+.send-msg{
+    width:100%;
+    height:55px;
+}
+
+.col-for-msg{
+    padding-right:0;
+}
+p{
+    margin-bottom: 5px;
+}
+.footer{
+    margin-top:30px;
+    width:100%;
+    height:50px;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.body-board{
+	margin:0;
+	padding:0;
+	height:500px;
+  width:100%;
+	overflow:hidden;
+	cursor:none;
+	background-color: #333;
+}
+#chalkboard{
+	position:relative;
+	top:0;
+	left:0;
+	width:inherit;
+	height:inherit;
+	z-index:1;
+	cursor:none;
+	background-image: url('../img/bg.png');
+  background-repeat: repeat;
+	}
+.chalk{
+	width:40px;
+	height:50px;
+	background:url(../img/chalk.png);
+	position:absolute;
+	padding:0;
+	margin:0;
+	bottom:0;
+	left:0;
+	cursor:none;
+	z-index:2;
+	}
+.eraser{
+	width: 50px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -25px;
+	background: #999;
+	border-radius: 5px;
+	box-shadow: inset 0 0 10px #545445;
+}
+.panel-btn{
+	display: block;
+	font-size: 18px;
+	color: #333;
+	font-family: sans-serif;
+	position:absolute;
+	margin:1em;
+	bottom:0;
+	left:0;
+	z-index:5;
+}
+.panel-btn a{
+	display: inline-block;
+	padding: 0.5em 1em;
+	background:#ccc;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.8;
+	margin-right: 0.5em;
+}
+.panel-btn a:hover{
+	opacity: 1;
+}
